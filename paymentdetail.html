@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Invoice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .invoice-container {
+            background: #fff;
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 32px 24px;
+            border-radius: 10px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+        }
+        .invoice-header {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        .invoice-header h2 {
+            margin: 0;
+            color: #2d7aaf;
+        }
+        .invoice-details {
+            margin-bottom: 24px;
+        }
+        .invoice-details table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .invoice-details td {
+            padding: 8px 0;
+        }
+        .label {
+            color: #888;
+            width: 40%;
+        }
+        .value {
+            color: #222;
+            font-weight: bold;
+        }
+        .status {
+            color: #28a745;
+            font-weight: bold;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 32px;
+            font-size: 1.1em;
+            color: #2d7aaf;
+        }
+    </style>
+</head>
+<body>
+    <div class="invoice-container">
+        <div class="invoice-header">
+            <h2>Payment Invoice</h2>
+        </div>
+        <div class="invoice-details">
+            <table>
+                <tr>
+                    <td class="label">Name:</td>
+                    <td class="value">John Doe</td>
+                </tr>
+                <tr>
+                    <td class="label">Date:</td>
+                    <td class="value">2024-06-15</td>
+                </tr>
+                <tr>
+                    <td class="label">Time:</td>
+                    <td class="value">14:30</td>
+                </tr>
+                <tr>
+                    <td class="label">Paid Amount:</td>
+                    <td class="value">$1,200.00</td>
+                </tr>
+                <tr>
+                    <td class="label">Status:</td>
+                    <td class="status">Confirmed</td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer">
+            Wishing you the best journey ahead!<br>
+            Thank you for choosing us.
+        </div>
+    </div>
+</body>
+</html>

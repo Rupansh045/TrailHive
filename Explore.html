@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+      font-family: 'Montserrat', Arial, sans-serif;
+      min-height: 100vh;
+      }
+      h1 {
+      text-align: center;
+      margin-top: 30px;
+      color: #2d3a4b;
+      letter-spacing: 2px;
+      font-weight: 700;
+      }
+      .videos-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      margin: 40px 0;
+      }
+      .video-row {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      flex-wrap: wrap;
+      }
+      video {
+      border-radius: 18px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+      background: #fff;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      outline: none;
+      border: 2px solid #e0eafc;
+      max-width: 100%;
+      height: 320px;
+      width: 320px;
+      object-fit: cover;
+      }
+      video:hover, video:focus {
+      transform: scale(1.04);
+      box-shadow: 0 12px 36px 0 rgba(31, 38, 135, 0.25);
+      border-color: #a0b9d6;
+      }
+      @media (max-width: 1100px) {
+      .video-row {
+        flex-direction: column;
+        gap: 30px;
+      }
+      video {
+        width: 90vw;
+        height: 220px;
+      }
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .line2{
+        display: flex;
+        gap:5px;
+        justify-content: center;
+      }
+       .line1{
+        display: flex;
+        gap: 5px;
+        justify-content: center;
+      }
+    </style>
+</head>
+<body><div class="line2"> 
+  
+    <video autoplay height="500"  width="500" muted id="v1">
+  <source src="img/videoplayback.mp4" type="video/mp4">
+ </video>
+</video>
+
+<br><br>
+
+<video autoplay height="500"  width="500" muted>
+  <source src="img/videoplayback (1).mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<br><br>
+<video autoplay height="500" width="500" muted>
+  <source src="img/videoplayback (2).mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<br><br></div>
+
+<div class="line1">
+ 
+<video autoplay height="500" width="500"  muted>
+  <source src="img/videoplayback (3).mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<br><br>
+
+<video autoplay height="500" width="500"  muted>
+  <source src="img/videoplayback (4).mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<br><br>
+
+<video autoplay height="500" width="500"  muted>
+  <source src="img/videoplayback (5).mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<br><br></div>
+<script>
+  // Add click event to all videos
+  document.querySelectorAll('video').forEach(function(video) {
+    video.addEventListener('click', function() {
+      // Pause all videos
+      document.querySelectorAll('video').forEach(v => v.pause());
+      // Request fullscreen
+      if (video.requestFullscreen) {
+        video.requestFullscreen();
+      } else if (video.webkitRequestFullscreen) {
+        video.webkitRequestFullscreen();
+      } else if (video.msRequestFullscreen) {
+        video.msRequestFullscreen();
+      }
+      // Enable controls
+      video.controls = true;
+      // Play the clicked video
+      video.play();
+    });
+
+    // Remove controls when exiting fullscreen
+    video.addEventListener('fullscreenchange', function() {
+      if (!document.fullscreenElement) {
+        video.controls = false;
+      }
+    });
+    video.addEventListener('webkitfullscreenchange', function() {
+      if (!document.webkitFullscreenElement) {
+        video.controls = false;
+      }
+    });
+    video.addEventListener('msfullscreenchange', function() {
+      if (!document.msFullscreenElement) {
+        video.controls = false;
+      }
+    });
+  });
+</script>
+<style>
+  video {
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+  }
+  video:active, video:focus {
+    box-shadow: 0 0 10px #333;
+  }
+</style>
+</body>
+</html>

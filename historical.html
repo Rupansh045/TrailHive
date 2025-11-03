@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manali</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+           background-color: antiquewhite;
+        }
+        header {
+            background-color: #021502;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .heading{
+            color: #101b10;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 30px;
+        }
+        .title{
+            color: #a0dca0;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 50px;
+        }
+        .photo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            object-fit: cover;
+            margin-bottom: 20px;}
+        .everest1{
+            width: 1100px;
+            height: 85vh;
+            align-content: center;
+            border-radius: 8px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            box-shadow: 2px 4px 5px black;
+            background-color: #0b4a0e;
+        }
+        .solang{
+            margin-top: 100px;
+            margin-bottom: 100px;
+            width: 500px;
+            height: 60vh;
+            align-content: center;
+            border-radius: 8px;
+            position: relative;
+            right: 400px;
+        }
+        .solbox{
+        width: 45%;
+         height: 25%;
+         position: absolute;
+         font-family: Arial, Helvetica, sans-serif;
+         top: 1360px;
+         padding: 2px;
+         font-size: large;
+         background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(57, 148, 148, 1) 28%, rgba(87, 199, 133, 1) 100%, rgba(237, 221, 83, 1) 100%);
+        border-radius: 10px;
+     }
+
+        .hidimba{
+            margin-top: 100px;
+            margin-bottom: 100px;
+            width: 500px;
+            height: 60vh;
+            align-content: center;
+            border-radius: 8px;
+            position: relative;
+            left: 400px;
+        }
+        .hibox{
+        width: 45%;
+         height: 25%;
+         position: absolute;
+         top: 2050px;
+        left: 330px;
+        border-radius: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+        padding: 2px;
+        background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(57, 148, 148, 1) 28%, rgba(87, 199, 133, 1) 100%, rgba(237, 221, 83, 1) 100%);
+        }
+
+        .jogini{
+            width: 500px;
+            height: 60vh;
+            align-content: center;
+            border-radius: 8px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            position: relative;
+            right: 400px;
+        }
+        .jobox{
+        width: 45%;
+         height: 25%;
+         position: absolute;
+         top: 2740px;
+         left: 410px;
+         padding: 2px;
+         font-size: large;
+         border-radius: 10px;
+         background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(57, 148, 148, 1) 28%, rgba(87, 199, 133, 1) 100%, rgba(237, 221, 83, 1) 100%);
+        }
+        .overlay{
+            width: 45%;
+            height: 25%;
+            position: absolute;
+            font-size: large;
+            top: 100%;
+            background-color: rgb(237, 185, 116);
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            padding: 20px;
+        }
+        .places {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .place {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .place img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .place h3 {
+            margin: 10px 0;
+        }
+        .registration {
+            margin-top: 40px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .here {
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 30px;
+          align-content: center;
+          font-weight: 700;
+          padding: 13px 50px;
+          background: #fc036b;
+          border-radius: 30px;
+          color: whitesmoke;
+          margin-left: 650px;
+          margin-bottom: 80%;
+          display:inline;
+          height: 60px;
+          width: 60px;
+          margin-right: 100px;
+        }
+
+        .registration h2 {
+            margin-bottom: 20px;
+        }
+        .registration form {
+            display: flex;
+            flex-direction: column;
+        }
+        .registration form input, .registration form textarea, .registration form button {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .registration form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .registration form button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="title"><p>Rajasthan</p></h1>
+    </header>
+    <nav>
+        <a href="#places">Places to Visit</a>
+        <a href="#register">Register</a>
+    </nav>
+    <div class="container">
+        <section id="places">
+            <h2  class="heading">Places to Visit</h2>
+            <div class="photo">
+                <div>
+                    <img src="img/rajasthan.jpg" alt="Rajasthan" height="600" width="1000">
+                </div>
+                <div class="overlay">
+                    <h2>Rajasthan</h2>
+                    <pre>Rajasthan, the "Land of Kings," offers an unparalleled historical 
+experience with its magnificent forts, opulent palaces, 
+and rich cultural heritage.</pre><hr><hr>
+                </div><hr><hr>
+                <br><br>
+                <div>
+                    <img class="solang" src="img/jaisal.webp" height="600" width="700" alt="jaisalmer fort">
+                    <div class="solbox">
+                        <h3 style="color: white;">Jaisalmer Fort</h3>
+                        <pre>This "Golden Fort" is one of the world's few living forts, 
+with narrow winding lanes housing temples, havelis, and 
+shops within its massive yellow sandstone walls.</pre><hr><hr>
+                    </div>
+                </div>
+                <br><br>
+                <div>
+                    <img class="hidimba" src="img/amber.jpg"  alt="Amber fort">
+                </div>
+                <div class="hibox">
+                    <h3 style="color: white;">Amber Fort</h3>
+                    <pre>This majestic 16th-century hilltop fort features stunning 
+Rajput architecture with ornate gateways, intricate mirror work 
+in the Sheesh Mahal (Palace of Mirrors), and spectacular 
+views of Maota Lake.</pre><hr><hr>
+                </div>
+                <br><br>
+                <img class="jogini" src="img/chittorgarh.jpg"  alt="chittorgarh fort">
+                <div class="jobox">        
+                    <h3 style="color: white;">Chittorgarh Fort</h3>
+                    <pre>India's largest fort complex spanning 700 acres, 
+known for its tragic history of valor and three famous sieges 
+where Rajput women committed jauhar (mass self-immolation).</pre><hr><hr>
+                </div>
+            </div>  
+        </section>
+    </div>
+    <div>
+        <a id="register" class="here" href="registerform.html">Register Here</a>
+    </div>
+    <footer>
+        <p>&copy; <span id="year"></span> Vrindavan Tourism. All rights reserved.</p>
+    </footer>
+
+    <script>
+      // Auto-update footer year
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

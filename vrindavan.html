@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vrindavan Temples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: antiquewhite;
+        }
+        header {
+            background-color: #021502;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .heading {
+            color: #101b10;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 30px;
+        }
+        .title {
+            color: #a0dca0;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 50px;
+        }
+        .photo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .everest1 {
+            width: 1100px;
+            height: 85vh;
+            align-content: center;
+            border-radius: 8px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            box-shadow: 2px 4px 5px black;
+            background-color: #0b4a0e;
+        }
+        .solang, .hidimba, .jogini {
+            margin-top: 100px;
+            margin-bottom: 100px;
+            width: 500px;
+            height: 60vh;
+            align-content: center;
+            border-radius: 8px;
+            position: relative;
+        }
+        .solang { right: 400px; }
+        .hidimba { left: 400px; }
+        .jogini { right: 400px; }
+
+        .solbox, .hibox, .jobox {
+            width: 45%;
+            height: 25%;
+            position: absolute;
+            padding: 2px;
+            font-size: large;
+            border-radius: 10px;
+            background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(57, 148, 148, 1) 28%, rgba(87, 199, 133, 1) 100%, rgba(237, 221, 83, 1) 100%);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .solbox { top: 1570px; }
+        .hibox { top: 2250px; left: 330px; }
+        .jobox { top: 2940px; left: 400px; }
+
+        .container {
+            padding: 20px;
+        }
+
+        .here {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            align-content: center;
+            font-weight: 700;
+            padding: 13px 50px;
+            background: #fc036b;
+            border-radius: 30px;
+            color: whitesmoke;
+            margin-left: 650px;
+            margin-bottom: 80%;
+            display: inline-block;
+            height: 60px;
+            width: 60px;
+            margin-right: 100px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="title">Vrindavan Temples</h1>
+    </header>
+
+    <nav>
+        <a href="#places">Places to Visit</a>
+        <a href="#register">Register</a>
+    </nav>
+
+    <div class="container">
+        <section id="places">
+            <h2 class="heading">Places to Visit</h2>
+            <div class="photo">
+                <div>
+                    <img class="everest1" src="img/vrindavankrishn2.png" alt="">
+                </div>
+                <div>
+                    <h2>Vrindavan</h2>
+                    <pre style="font-size: large;">
+<h3>Vrindavan, nestled along the Yamuna River in Uttar Pradesh,
+is a sacred pilgrimage town steeped in Hindu mythology 
+as the childhood home of Lord Krishna.</h3></pre><hr><hr>
+                </div><hr><hr><br><br>
+                <div>
+                    <img class="solang" src="img/premmandhir.png" height="600" width="700" alt="Prem Mandir">
+                    <div class="solbox">
+                        <h3>Prem Mandir</h3>
+                        <pre>A visit to Prem Mandir offers something profound—
+a moment of connection with India's spiritual heritage expressed 
+through artistic excellence. Whether you approach it as a pilgrim
+seeking divine grace or as a traveler appreciating cultural magnificence.</pre><hr><hr>
+                    </div>
+                </div><br><br>
+                <div>
+                    <img class="hidimba" src="img/bankibihari.png" alt="Banke Bihari Temple">
+                    <div class="hibox">
+                        <h3>Banke Bihari Temple</h3>
+                        <pre>A visit to Banke Bihari Temple is a journey into divine love 
+and joy, where every chant of "Radhe Radhe" stirs the soul. 
+The sight of Bihari ji, with His playful, half-revealed darshan,
+leaves an everlasting imprint on the heart. Amidst Vrindavan's sacred 
+air, time stands still, and devotion flows like a river.</pre><hr><hr>
+                    </div>
+                </div><br><br>
+                <div>
+                    <img class="jogini" src="img/Iskcon temple.jpg" alt="ISKCON Temple">
+                    <div class="jobox">
+                        <h3>ISKCON Temple Vrindavan</h3>
+                        <pre>The ISKCON Temple (International Society for Krishna Consciousness) 
+stands as a vibrant spiritual sanctuary dedicated to Lord Krishna, 
+featuring stunning architecture with ornate domes and spires that 
+blend traditional Indian temple design with modern elements.</pre><hr><hr>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div>
+        <a id="register" class="here" href="registerform.html">Register Here</a>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Vrindavan Tourism. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Automatically set the current year in the footer
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

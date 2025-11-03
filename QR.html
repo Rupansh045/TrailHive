@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QR Payment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 16px;
+        }
+        .container {
+            background: #fff;
+            padding: 32px 24px;
+            border-radius: 12px;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+        .qr-img {
+            width: 100%;
+            max-width: 320px;
+            height: auto;
+            aspect-ratio: 1/1; /* maintain square shape */
+            margin: 24px 0;
+            border: 8px solid #e0e0e0;
+            border-radius: 16px;
+            background: #fff;
+            object-fit: contain;
+        }
+        .instructions {
+            color: #555;
+            margin-bottom: 16px;
+        }
+        .amount {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Pay via QR Code</h2>
+        <div class="amount">Amount: ₹1,000</div>
+        <div class="instructions">
+            Scan the QR code below with your preferred payment app to complete the payment.
+        </div>
+        <img src="img/kdQR.jpg" alt="QR Code for Payment" class="qr-img">
+        <div style="font-size:0.95em; color:#888; margin-top:12px;">
+            After payment, please click 'Done' in your app.
+        </div>
+    </div>
+</body>
+</html>
